@@ -8,6 +8,7 @@ var game = true;
 var goodTiles = 0;
 var nrBombs = 0;
 var nrFlags = 0;
+var flag = false;
 
 function random()
 {
@@ -20,6 +21,20 @@ function random()
 		else map[x][y] = -1;
 	}
 	
+}
+
+function flagClick1()
+{
+	flag = true;
+	document.getElementById("flag").setAttribute("onclick","flagClick2()");
+	document.getElementById("flag").src = "images/wrongFlag.png";
+}
+
+function flagClick2()
+{
+	flag = false;
+	document.getElementById("flag").setAttribute("onclick","flagClick1()");
+	document.getElementById("flag").src = "images/flag.png";
 }
 
 window.onload = function()
@@ -54,7 +69,6 @@ window.onload = function()
 
 function grey(id)
 {
-	let flag = document.getElementById("flagSwitch").checked;
 	if(flag) return;
 	let x = Math.floor(parseInt(id) / 10);
 	let y = parseInt(id) % 10;
@@ -67,8 +81,6 @@ function ungrey(id)
 {
 	if(!game) return;
     document.getElementById("emoji").src="images/happyEmoji.png";
-	if(map[x][y] != 0 && map[x][y] != -1) return;
-	document.getElementById(id).src = "images/empty.png";
 }
 
 function bomb(x,y)
@@ -197,7 +209,7 @@ function tileClick(tile)
 	if(!game)return;
 	let x = Math.floor(parseInt(tile) / 10);
 	let y = parseInt(tile) % 10;
-	let flag = document.getElementById("flagSwitch").checked;
+	
 	if(flag){displayFlag(x,y); return;}
 	
 	if(map[x][y] == -1){lose(); return;}
