@@ -19,14 +19,27 @@
 	transform: rotate(360deg);
 	transition: 1s;
 }
+
+#header{
+	margin-top: 20px;
+	display: inline-block;
+}
+#header>img:hover{
+	cursor: pointer;
+	transform: rotate(360deg);
+	transition: 1s;
+}
+#footer{
+	display: inline;
+}
+
 p{
-	font-size: 40px;
-	text-align: center;
+	margin: 5px;
+	font-size: 20px;
 	font-family: "Monaco", "Courier New", monospace;
 }
 
 .board {
-  
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
   height: 300px;
@@ -36,22 +49,21 @@ p{
   justify-items: center;
 }
 .grid-item {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   padding: 50px;
 }
 .tile{
-	height: 30px;
-	width: 30px;
-	border: solid;
+	height: 40px;
+	width: 40px;
 }
 #emoji{
-	height: 30px;
-	width: 30px;
+	height: 40px;
+	width: 40px;
 }
 #flag{
-	height: 30px;
-	width: 30px;
+	height: 40px;
+	width: 40px;
 }
 
 .switch {
