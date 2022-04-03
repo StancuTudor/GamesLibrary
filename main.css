@@ -1,0 +1,15 @@
+img {
+	height: 100px;
+	width: 100px;
+}
+
+img:hover{
+	height: 90px;
+	width: 90px;
+}
+
+p {
+	font-size: 40px;
+	text-align: center;
+	font-family: "Monaco", "Courier New", monospace;
+}

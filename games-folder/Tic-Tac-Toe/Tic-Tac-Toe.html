@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Tic-Tac-Toe.css">
+<script src="Tic-Tac-Toe.js"></script>
+<title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+<a  href="../../main.html"><img src="images/home.png" id="homeButton" class="menuButton"></img></a>
+<img src="images/reload.png" id="reloadButton" class="menuButton" onclick="reload()"></img></a>
+<center>
+<div class="board">
+  <img id="11" src="images/empty.png" class="grid-item top left" onclick="turn_taken(id)" onmouseover="display(id)" onmouseout="remove(id)"></img>
+  <img id="12" src="images/empty.png" class="grid-item top c-mid" onclick="turn_taken(id)" onmouseover="display(id)" onmouseout="remove(id)"></img>
+  <img id="13" src="images/empty.png" class="grid-item top right" onclick="turn_taken(id)" onmouseover="display(id)" onmouseout="remove(id)"></img>
+  <img id="21" src="images/empty.png" class="grid-item l-mid left" onclick="turn_taken(id)" onmouseover="display(id)" onmouseout="remove(id)"></img>
+  <img id="22" src="images/empty.png" class="grid-item mid" onclick="turn_taken(id)" onmouseover="display(id)" onmouseout="remove(id)"></img>
+  <img id="23" src="images/empty.png" class="grid-item l-mid right" onclick="turn_taken(id)" onmouseover="display(id)" onmouseout="remove(id)"></img>
+  <img id="31" src="images/empty.png" class="grid-item bottom left" onclick="turn_taken(id)" onmouseover="display(id)" onmouseout="remove(id)"></img>
+  <img id="32" src="images/empty.png" class="grid-item bottom c-mid" onclick="turn_taken(id)" onmouseover="display(id)" onmouseout="remove(id)"></img>
+  <img id="33" src="images/empty.png" class="grid-item bottom right" onclick="turn_taken(id)" onmouseover="display(id)" onmouseout="remove(id)"></img>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<p id="winMessage"></p>
+
+</center>
+</body>
+
+</html>

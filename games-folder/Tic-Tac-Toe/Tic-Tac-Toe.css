@@ -1,0 +1,80 @@
+.board {
+  
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 300px;
+  width: 300px;
+  padding: auto;
+  align-self: center;
+  justify-items: center;
+}
+.grid-item {
+  height: 50px;
+  width: 50px;
+  padding: 50px;
+}
+.grid-item:hover {
+	cursor: pointer;
+}
+.c-mid {
+	
+  border-left-style: solid;
+  border-left-width: 10px;
+  border-right-style: solid;
+  border-right-width: 10px;
+  border-image-slice:75 77 68 68;
+  border-image-width:20px 20px 20px 20px;
+  border-image-outset:0px 0px 0px 0px;
+  border-image-repeat:stretch stretch;
+  border-image: url(images/border.jpg) 30 round;
+}
+.l-mid {
+  border-top-style: solid;
+  border-top-width: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+  border-image-slice:75 77 68 68;
+  border-image-width:20px 20px 20px 20px;
+  border-image-outset:0px 0px 0px 0px;
+  border-image-repeat:stretch stretch;
+  border-image: url(images/border.jpg) 30 round;
+  
+}
+.mid{
+  border: 10px solid;
+  border-image-slice:100 100 68 68;
+  border-image-width:20px 20px 20px 20px;
+  border-image-outset:0px 0px 0px 0px;
+  border-image-repeat:stretch stretch;
+  border-image: url(images/border.jpg) 30 round;
+}
+p {
+	font-size: 25px;
+	font-family: "Lucida Console", "Monaco", monospace;
+	padding-bottom: 1px;
+}
+.menuButton {
+	height: 100px;
+	width: 100px;
+	position: fixed;
+	top: 110px;
+	cursor: pointer;
+}
+
+#homeButton{
+	top: 0px;
+}
+
+.menuButton:hover {
+	height: 90px;
+	width: 90px;
+}
+
+#reloadButton:hover {
+	transform: rotate(360deg);
+	transition: 1s;
+}
+#emoji{
+	height: 30px;
+	width: 30px;
+}
