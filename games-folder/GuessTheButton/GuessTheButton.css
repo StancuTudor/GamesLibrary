@@ -36,8 +36,10 @@ button {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 4px;
+  transition: opacity 0.5s ease-in-out;
 }
 #hearts>img {
 	height: 50px;
 	width: 50px;
+	transition: opacity 0.5s ease-in-out;
 }
