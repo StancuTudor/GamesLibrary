@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="main.css">
+<title>Informations</title>
+</head>
+
+<body>
+<a  href="main.html"><img src="logos/home.png" id="homeButton" class="menuButton"></img></a>
+	<article>
+		<h1>List of games</h1>
+		<ol class="gamesList">
+			<li>Guess The Button
+			<ul class="container">
+				<li>There is a winning button chosen at random. You choose the wrong one, you lose a life. You guess it right, you advance and get a life. Can't get easier than that.</li>
+				<li>The original idea was to type in a number of buttons from which you have to guess from. But that was lame, so I adapted it to a more intersesting game.</li>
+				<li>Buttons are added to a list with unique IDs. A variable is chosen at random. When you click a button, the game checks if it has the same ID as the variable. Lose: Button and life disapears. Win: Buttons reappear + Another Button and Extra life.</li>
+				<li>Overall it took about 4 hours. The game itself was done pretty quick, but then I had to work on it's design. Lifes where the latest addition.</li>
+				<li>I don't think I'll be adding anything new in the future.</li>
+			</ul></li>
+			<li>Tic-Tac-Toe
+			<ul class="container">
+				<li>2-player game. One is X, the other one is 0. There is a 3x3 grid. Each players take turns to put their icon in a square. Whoever scores 3 of their icons in a row, column or diagonal wins.</li>
+				<li>Obviously, not an original game.</li>
+				<li>Every time a tile is clicked, the respective image is placed there, the game checks if it's winning then the turn alternates.</li>
+				<li>This might be the easiest game of them bunch to make (about 2 hours), but it took forever for the design to look nice.</li>
+				<li>I still have work to do on the design. For example: the grid that becomes transparent when hovered over.</li>
+			</ul></li>
+			<li>Hangman
+			<ul class="container">
+				<li>There is a random word chosen at random. You guess letters until you get the word. Every time you pick a wrong letter, a draing appears. You have to win before the man gets hanged.</li>
+				<li>Obviously, not and original game.</li>
+				<li>When a letter is picked, the game checks if it appears in the word and reveals it. If not, next image appears.</li>
+				<li>This was my first game in JavaScript. It was easier than expected. It only took about 3 hours.</li>
+				<li>I don't think I'll be adding anything new in the future.</li>
+			</ul></li>
+			<li>Mathler
+			<ul class="container">
+				<li>There is a hidden equation that you have to guess. You only know the result. You type in a correct equation and then the game turns the buttons <b style="color:green; font: bold;">green</b> if they are well placed, <b style="color:yellow; font: bold;">yellow</b> if they appear in the equation but not in that exact spot, or <b style="color:red; font: bold;">red</b> if they don't appear at all.</li>
+				<li>Inspired by Wordle. Also a copy of the actual Mathler.com</li>
+				<li>An equation is chosen from an array of already given equations. When an equation is put, the game checks if it gives the result and then starts to look for the characters. And then proceed to change the colors accordingly.</li>
+				<li>It wasn't as easy to get it right mostly because of the colors that need to correspond to the number of characters that actually appear. Although it only took about 2 hours to make. This was my last game, so I had some experience.</li>
+				<li>Planning on fixing some bugs and to make its design better.</li>
+			</ul></li>
+			<li>Minesweeper
+			<ul class="container">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul></li>
+			<li>Snake
+			<ul class="container">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul></li>
+		</ol>
+	</article>
+
+</body>
+
+</html>

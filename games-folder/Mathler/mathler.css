@@ -1,0 +1,61 @@
+div {
+	font-size: 20px;
+	text-align: center;
+	font-family: "Monaco", "Courier New", monospace;
+}
+
+.tile {
+font-weight: 900;
+  background-color: lightgrey;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  border-radius: 4px;
+  height: 20px;
+  width: 20px;
+  font-family: "Monaco", "Courier New", monospace;
+}
+
+button {
+  font-weight: 900;
+  background-color: lightgrey;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: "Monaco", "Courier New", monospace;
+}
+
+
+.menuButton {
+	height: 100px;
+	width: 100px;
+	position: fixed;
+	top: 110px;
+	cursor: pointer;
+}
+
+#homeButton{
+	top: 0px;
+}
+
+.menuButton:hover {
+	height: 90px;
+	width: 90px;
+}
+
+#reloadButton:hover {
+	transform: rotate(360deg);
+	transition: 1s;
+}
