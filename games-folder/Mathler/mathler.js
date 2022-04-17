@@ -64,7 +64,7 @@ function color(pos, clr)
 	let btn = document.getElementById(board[pos]);
 	
 	if(btn.style.backgroundColor == "green") return;
-	if(btn.style.backgroundColor == "rgb(255, 204, 0)" && clr == "red") return;
+	if(btn.style.backgroundColor == "#ffcc00" && clr == "red") return;
 	
 	btn.style.backgroundColor = clr;
 }
