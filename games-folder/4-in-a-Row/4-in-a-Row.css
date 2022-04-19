@@ -1,0 +1,48 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    height: 350px;
+    width: 350px;
+}
+.grid-item {
+    font-size: 50px;
+    text-align: center;
+	border: groove;
+}
+.upper-item {
+    font-size: 50px;
+    text-align: center;
+	border: none;
+}
+#board>img{
+	height: 50px;
+	width: 50px;
+}
+
+.menuButton {
+	height: 100px;
+	width: 100px;
+	position: fixed;
+	top: 110px;
+	cursor: pointer;
+}
+
+#homeButton{
+	top: 0px;
+}
+
+.menuButton:hover {
+	height: 90px;
+	width: 90px;
+}
+
+#reloadButton:hover {
+	transform: rotate(360deg);
+	transition: 1s;
+}
+
+p {
+	margin-top: 150px;
+	font-size: 25px;
+	font-family: "Lucida Console", "Monaco", monospace;
+}

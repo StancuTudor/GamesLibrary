@@ -389,7 +389,7 @@ function moveDown()
 function rotate(way)
 {
 	currentPiece.rotate(way);
-	currentPiece.onBoard(currentTile);
+	currentPiece.onBoard(currentTile,1);
 }
 
 document.addEventListener("keypress", function onEvent(event) {
